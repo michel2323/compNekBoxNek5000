@@ -141,7 +141,7 @@ c-----------------------------------------------------------------------
       integer e,f,eg
 c     e = gllel(eg)
 
-      qvol   = 0.0
+      qvol   = 1.0
       source = 0.0
 
       return
@@ -156,7 +156,9 @@ c-----------------------------------------------------------------------
       
       ux = 0.0
       uy = 0.0
-      uz = 0.0 
+      uz = 0.0
+
+      temp= 1.0 
       
       return
       end
@@ -219,6 +221,8 @@ c-----------------------------------------------------------------------
       ux=0.
       uy=0.
       uz=coeff_ic*wstotal_ic
+
+      temp=1.0
       
       return
       end
@@ -249,11 +253,11 @@ c-----------------------------------------------------------------------
 
       call tripf
 
-      if(STATS3D.eq.1) then
-         call stat_avg_2D
-      else
-         call stat_avg_2D
-      endif
+      !if(STATS3D.eq.1) then
+      !   call stat_avg_2D
+      !else
+      !   call stat_avg_2D
+      !endif
       
       return
       end
