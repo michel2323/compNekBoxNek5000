@@ -210,7 +210,7 @@ end module usr
     implicit none
 
     integer :: ix, iy, iz, eg
-    qvol   = 1.0!gamma * uz
+    qvol   = gamma * uz
 
     return
     end subroutine userq
@@ -226,7 +226,7 @@ end module usr
     ux = 0.0
     uy = 0.0
     uz = 0.0
-    temp = 1.0!0.0
+    temp = 0.0
 
     return
     end subroutine userbc
@@ -264,7 +264,7 @@ end module usr
       enddo
     enddo
     uz = uz * prefac
-    temp = 1.0!temp * prefac * gamma / {conductivity}
+    temp = temp * prefac * gamma / {conductivity}
 
     ! nothing in the span-wise direction
     ux=0.

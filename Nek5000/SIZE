@@ -3,7 +3,7 @@ C
 C     HCUBE array dimensions
 C
       parameter (ldim=3)
-      parameter (lx1=6,ly1=lx1,lz1=lx1,lelt=1024,lelv=lelt)
+      parameter (lx1=6,ly1=lx1,lz1=lx1,lelt=16,lelv=lelt)
       parameter (lxd=9,lyd=lxd,lzd=lxd)
 c      parameter (lxd=20,lyd=lxd,lzd=1)
       parameter (lelx=16,lely=16,lelz=1)
@@ -43,7 +43,7 @@ C LX1M=LX1 when there are moving meshes; =1 otherwise
       parameter (ldimt= 1)                       ! 2 passive scalars + T
       parameter (ldimt1=ldimt+1)
       parameter (ldimt3=ldimt+3)
-      parameter (lp = 1)
+      parameter (lp = 64)
       parameter (lelg =1024)
 c
 c     Note:  In the new code, LELGEC should be about sqrt(LELG)

@@ -9,10 +9,10 @@ SOURCE_ROOT_JL="$SOURCE_ROOT/jl"
 SOURCE_ROOT_CMT="$SOURCE_ROOT/core/cmt"
 
 # Fortran compiler
-F77="mpif90 -mcmodel=medium"
+F77="mpif90 -fc=ifort"
 
 # C compiler
-CC="mpicc -mcmodel=medium"
+CC="mpicc -cc=icc"
 
 # pre-processor symbol list 
 # (set PPLIST=? to get a list of available symbols)
@@ -41,8 +41,8 @@ USR="IO_tools.o chkpoint.o uparam.o statistics_2D.o statistics_3D.o statistics_2
 G="-I./inc_src" # -mcmodel=medium"
 
 # optimization flags
-OPT_FLAGS_STD="-O3"
-OPT_FLAGS_MAG="-O3"
+OPT_FLAGS_STD="-O3 -xMIC-AVX512"
+OPT_FLAGS_MAG="-O3 -xMIC-AVX512"
 
 # enable AMG coarse grid solver (default XXT)
 #IFAMG="true"
