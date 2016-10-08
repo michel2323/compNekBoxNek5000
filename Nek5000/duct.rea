@@ -94,9 +94,9 @@
   0.000000E+00 p090
   0.000000E+00 p091
   0.000000E+00 p092
-  20.00000E+00 p093 Number of previous pressure solns saved
-  5.000000E+00 p094 start projecting velocity after p94 step
-  5.000000E+00 p095 start projecting pressure after p95 step
+  0.00000E+00 p093 Number of previous pressure solns saved
+  0.000000E+00 p094 start projecting velocity after p94 step
+  0.000000E+00 p095 start projecting pressure after p95 step
   0.000000E+00 p096
   0.000000E+00 p097
   0.000000E+00 p098
